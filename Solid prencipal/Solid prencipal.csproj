@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaCalculator.cs" />
     <Compile Include="BinaryConverter.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="ConverterFactory.cs" />
+    <Compile Include="Ellipse.cs" />
     <Compile Include="HexadecimalConverter.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="NumberConverter.cs" />

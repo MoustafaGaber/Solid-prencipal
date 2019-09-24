@@ -12,7 +12,6 @@
             return $"The result is: {System.Convert.ToString(DecimalNumber, 2)}";
         }
     }
-
 }
 
 
