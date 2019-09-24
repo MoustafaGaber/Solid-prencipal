@@ -1,0 +1,7 @@
+D:\org\Projects\Solid prencipal\Solid prencipal\bin\Debug\Solid prencipal.exe.config
+D:\org\Projects\Solid prencipal\Solid prencipal\bin\Debug\Solid prencipal.exe
+D:\org\Projects\Solid prencipal\Solid prencipal\bin\Debug\Solid prencipal.pdb
+D:\org\Projects\Solid prencipal\Solid prencipal\obj\Debug\Solid prencipal.csprojAssemblyReference.cache
+D:\org\Projects\Solid prencipal\Solid prencipal\obj\Debug\Solid prencipal.csproj.CoreCompileInputs.cache
+D:\org\Projects\Solid prencipal\Solid prencipal\obj\Debug\Solid prencipal.exe
+D:\org\Projects\Solid prencipal\Solid prencipal\obj\Debug\Solid prencipal.pdb
