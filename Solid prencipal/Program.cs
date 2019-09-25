@@ -15,7 +15,9 @@ class Program
         {
             // NumberConverter converter = new NumberConverter();
             //var converter = new NumberConverter(new Logger(), new Reader());
-            var converter = new NumberConverter(new TextFileLogger(), new Reader(),new Logger());
+            var consoleLogger = new Logger();
+
+            var converter = new NumberConverter(new TextFileLogger(), new Reader(consoleLogger),new Logger());
 
             converter.Convert();
             Console.ReadLine();
