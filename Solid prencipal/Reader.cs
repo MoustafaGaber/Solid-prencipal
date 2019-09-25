@@ -2,7 +2,7 @@
 
 namespace Solid_prencipal
 {
-    public class Reader
+    public class Reader:IReader
     {
         public int ReadInteger()
         {

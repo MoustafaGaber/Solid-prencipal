@@ -18,8 +18,8 @@ namespace Solid_prencipal
                 catch (Exception)
                 {
 
-                    return null;
-                }
+                return new InvalidBaseConverter(decimalNumber);
+            }
             }
         }
 

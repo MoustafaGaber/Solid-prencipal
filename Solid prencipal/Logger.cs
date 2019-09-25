@@ -2,7 +2,7 @@
 
 namespace Solid_prencipal
 {
-    public class Logger
+    public class Logger: ILogger
     {
         public void Log(string message)
         {
@@ -10,7 +10,7 @@ namespace Solid_prencipal
         }
     }
 
- }
+}
 
 
 

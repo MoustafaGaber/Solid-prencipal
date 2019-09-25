@@ -13,12 +13,14 @@ class Program
     {
         static void Main(string[] args)
         {
-           // NumberConverter converter = new NumberConverter();
+            // NumberConverter converter = new NumberConverter();
+            //var converter = new NumberConverter(new Logger(), new Reader());
+            var converter = new NumberConverter(new TextFileLogger(), new Reader(),new Logger());
 
-           // converter.Convert();
-          //  Console.ReadLine();
+            converter.Convert();
+            Console.ReadLine();
 
-            Ellipse ellipse = new Ellipse();
+            /* Ellipse ellipse = new Ellipse();
 
             ellipse.SetRx(5);
             ellipse.SetRy(4);
@@ -32,7 +34,7 @@ class Program
             ellipse.SetRy(5);
 
             // Rx = Ry = 5 => IsCircle = True
-            result = calculator.Area(ellipse);
+            result = calculator.Area(ellipse); */
 
         }
     }

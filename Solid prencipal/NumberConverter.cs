@@ -14,21 +14,29 @@ namespace Solid_prencipal
     {
         public int DecimalNumber { get; set; }
 
-        public Logger Logger { get; set; } = new Logger();
-        public Reader Reader { get; set; } = new Reader();
-
+        public ILogger Logger { get; set; }
+        public IReader Reader { get; set; }
+        public ILogger Writer { get; set; }
+        public NumberConverter(ILogger logger, IReader reader, ILogger writer)
+        {
+            Logger = logger;
+            Reader = reader;
+            Writer = writer;
+        }
 
         public void Convert()
         {
             //Console.WriteLine("Program is starting...");
             Logger.Log("Program is starting...");
-
+            Writer.Log("Program is starting...");
             //Console.WriteLine("Enter the number to convert:");
             Logger.Log("Enter the number to convert:");
+            Writer.Log("Enter the number to convert:");
             DecimalNumber = Reader.ReadInteger();//int.Parse(Console.ReadLine());
 
             //Console.WriteLine("Enter the base type (Ex: 2,8):");
             Logger.Log("Enter the base type (Ex: 2,8,16):");
+            Writer.Log("Enter the base type (Ex: 2,8,16):");
 
             //var baseType = (BaseType)int.Parse(Console.ReadLine());//
 
@@ -84,15 +92,15 @@ namespace Solid_prencipal
 
             Logger.Log($"The result is: {result} ");
 
-
+            Writer.Log($"The result is: {result} ");
             //Console.WriteLine("Program is ending..");
             Logger.Log("Program is ending..");
-
+            Writer.Log("Program is ending..");
         }
 
     }
 
- }
+}
 
 
 
